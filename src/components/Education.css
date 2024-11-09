@@ -1,0 +1,92 @@
+/* Import Playfair Display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+/* General styling for the education section */
+#education {
+    padding: 40px;
+    background-color: #fff4fc;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#education h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Education list container */
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Individual education item styling with centered content */
+.education-item {
+    background-color: #e0f7fa; /* Updated background color */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center align the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hover effect for education items */
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of each education item */
+.education-item h3 {
+    font-size: 1.5rem;
+    color: #0277bd; /* Updated title color */
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Description text within each education item */
+.education-item p {
+    font-size: 1rem;
+    color: #424242; /* Updated description text color */
+    margin: 5px 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #education h2 {
+        font-size: 2rem;
+    }
+
+    .education-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .education-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #education {
+        padding: 20px;
+    }
+
+    .education-item {
+        padding: 15px;
+    }
+
+    .education-item p {
+        font-size: 0.9rem;
+    }
+}

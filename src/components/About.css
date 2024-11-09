@@ -1,0 +1,124 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1f7ff; /* Light blue background */
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-image {
+  margin-right: -20px; /* Slight shift, not too close */
+}
+
+.about-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* Circular image for About section */
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Font change to Playfair Display */
+.about-text {
+  max-width: 50%;
+  margin-left: 40px; /* Increased spacing from the image */
+  font-family: 'Playfair Display', serif; /* Playfair Display font */
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-text h2 {
+  font-size: 2.5em;
+  color: #ff5c8a;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  margin: 15px 0;
+}
+
+.decorative-elements {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  z-index: -1;
+}
+
+.decorative-elements .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(255, 92, 138, 0.1);
+  position: absolute;
+  top: 0;
+  right: 50px;
+  animation: moveCircle 6s ease-in-out infinite;
+}
+
+.decorative-elements .rectangle {
+  width: 300px;
+  height: 120px;
+  background-color: rgba(255, 92, 138, 0.1);
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  animation: moveRectangle 6s ease-in-out infinite;
+}
+
+@keyframes moveCircle {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveRectangle {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-50px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    max-width: 90%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .about-image img {
+    width: 250px;
+    height: 250px;
+  }
+}

@@ -1,0 +1,75 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff4fc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo styling */
+.navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff4081; /* Darker pink for contrast */
+    cursor: pointer;
+}
+
+/* Links container */
+.navbar-links a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Hover effect for links */
+.navbar-links a:hover {
+    color: #030303; /* Matches the logo for a cohesive look */
+}
+
+/* Underline for the active link */
+.navbar-links a.active {
+    border-bottom: 2px solid #ff4081;
+    padding-bottom: 4px;
+}
+
+/* Active link styling */
+.navbar-links a:active {
+    color: #d81b60;
+}
+
+/* Download Resume Button */
+.navbar-btn {
+    background-color: #ff4081; /* Matches the logo color */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for Resume Button */
+.navbar-btn:hover {
+    background-color: #ff1b57;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-links a {
+        margin: 10px 0;
+    }
+    .navbar-btn {
+        margin-top: 15px; /* Adds spacing on mobile for the button */
+    }
+}

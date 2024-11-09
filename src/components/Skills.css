@@ -1,0 +1,99 @@
+/* Import Playfair Display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+/* Skills section styling */
+#skills {
+    padding: 40px;
+    background-color: #e1f7ff;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Styling for each skills category */
+.skills-category {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Category heading styling */
+.skills-category h3 {
+    font-size: 1.8rem;
+    color: #ff4081;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Grid layout for skill items */
+.skills-list {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Four columns for technical skills */
+.skills-category.technical-skills .skills-list {
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+}
+
+/* Two columns for other skills */
+.skills-category .skills-list {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Individual skill items */
+.skill-item {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Two columns for technical skills on medium screens */
+    .skills-category.technical-skills .skills-list {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust heading size and set one column for skills */
+    #skills h2 {
+        font-size: 2rem;
+    }
+
+    .skills-category h3 {
+        font-size: 1.5rem;
+    }
+
+    .skills-category.technical-skills .skills-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller font size for skill items on mobile */
+    .skill-item {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
