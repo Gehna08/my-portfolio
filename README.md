@@ -3,7 +3,7 @@
 Welcome to my portfolio! This project showcases my skills, projects, and experience.
 
 ## 🌐 Live Demo
-Check it out: [**https://gehnavithalani.com**](https://gehnavithalani.com)
+Check it out: https://gehnavithalani.vercel.app/
 
 ## 🛠 Tech Stack
 - **React.js**
